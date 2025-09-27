@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.4.2.3 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+		pre { background: transparent }
+		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
+		pre.cjk { font-family: "NSimSun", monospace; font-size: 10pt }
+		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre class="western">import React from 'react';
+
+const CertificateSuccessVerified = () =&gt; {
+  // Data contoh untuk sertifikat
+  const certificateData = {
+    name: &quot;THANISA AULIA AZZAHRA&quot;,
+    age: 21,
+    gender: &quot;Perempuan&quot;,
+    certificateId: &quot;987654&quot;,
+    dateOfIssue: &quot;26-September-2023&quot;,
+    dose: &quot;Dosis ke-3&quot;,
+    totalDoses: &quot;3 Dosis&quot;,
+    vaccineFacility: &quot;SEMERAP&quot;
+  };
+
+  return (
+    &lt;div className=&quot;min-h-screen bg-muted flex items-center justify-center p-4&quot;&gt;
+      &lt;div className=&quot;bg-background rounded-xl shadow-lg border border-border max-w-md w-full p-6&quot;&gt;
+        {/* Header dengan judul dan badge verified */}
+        &lt;div className=&quot;text-center mb-6&quot;&gt;
+          &lt;div className=&quot;flex justify-center items-center mb-4&quot;&gt;
+            &lt;div className=&quot;w-16 h-16 bg-green-100 rounded-full flex items-center justify-center&quot;&gt;
+              &lt;svg className=&quot;w-8 h-8 text-green-600&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; viewBox=&quot;0 0 24 24&quot;&gt;
+                &lt;path strokeLinecap=&quot;round&quot; strokeLinejoin=&quot;round&quot; strokeWidth=&quot;2&quot; d=&quot;M5 13l4 4L19 7&quot;&gt;&lt;/path&gt;
+              &lt;/svg&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;h1 className=&quot;text-2xl font-bold text-foreground mb-2&quot;&gt;Certificate Success Verified!&lt;/h1&gt;
+          &lt;div className=&quot;inline-flex items-center px-3 py-1 rounded-full bg-green-100 text-green-800 text-sm font-medium&quot;&gt;
+            &lt;svg className=&quot;w-4 h-4 mr-1&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 20 20&quot;&gt;
+              &lt;path fillRule=&quot;evenodd&quot; d=&quot;M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z&quot; clipRule=&quot;evenodd&quot; /&gt;
+            &lt;/svg&gt;
+            Terverifikasi
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        {/* Informasi sertifikat */}
+        &lt;div className=&quot;space-y-4 mb-6&quot;&gt;
+          &lt;div className=&quot;grid grid-cols-2 gap-4&quot;&gt;
+            &lt;div&gt;
+              &lt;p className=&quot;text-sm text-muted-foreground&quot;&gt;Nama&lt;/p&gt;
+              &lt;p className=&quot;font-medium text-foreground&quot;&gt;{certificateData.name}&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;p className=&quot;text-sm text-muted-foreground&quot;&gt;Umur&lt;/p&gt;
+              &lt;p className=&quot;font-medium text-foreground&quot;&gt;{certificateData.age} tahun&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div&gt;
+            &lt;p className=&quot;text-sm text-muted-foreground&quot;&gt;Gender&lt;/p&gt;
+            &lt;p className=&quot;font-medium text-foreground&quot;&gt;{certificateData.gender}&lt;/p&gt;
+          &lt;/div&gt;
+
+          &lt;div&gt;
+            &lt;p className=&quot;text-sm text-muted-foreground&quot;&gt;Sertifikat ID&lt;/p&gt;
+            &lt;p className=&quot;font-medium text-foreground&quot;&gt;{certificateData.certificateId}&lt;/p&gt;
+          &lt;/div&gt;
+
+          &lt;div&gt;
+            &lt;p className=&quot;text-sm text-muted-foreground&quot;&gt;Tanggal Terbit&lt;/p&gt;
+            &lt;p className=&quot;font-medium text-foreground&quot;&gt;{certificateData.dateOfIssue}&lt;/p&gt;
+          &lt;/div&gt;
+
+          &lt;div className=&quot;grid grid-cols-2 gap-4&quot;&gt;
+            &lt;div&gt;
+              &lt;p className=&quot;text-sm text-muted-foreground&quot;&gt;Dosis&lt;/p&gt;
+              &lt;p className=&quot;font-medium text-foreground&quot;&gt;{certificateData.dose}&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div&gt;
+              &lt;p className=&quot;text-sm text-muted-foreground&quot;&gt;Total Dosis&lt;/p&gt;
+              &lt;p className=&quot;font-medium text-foreground&quot;&gt;{certificateData.totalDoses}&lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+
+          &lt;div&gt;
+            &lt;p className=&quot;text-sm text-muted-foreground&quot;&gt;Fasilitas Vaksin&lt;/p&gt;
+            &lt;p className=&quot;font-medium text-foreground&quot;&gt;{certificateData.vaccineFacility}&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        {/* Footer dengan watermark */}
+        &lt;div className=&quot;border-t border-border pt-4&quot;&gt;
+          &lt;p className=&quot;text-xs text-muted-foreground text-center&quot;&gt;
+            Dokumen ini telah diverifikasi secara digital dan dapat dipercaya keasliannya
+          &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  );
+};
+
+export default CertificateSuccessVerified;</pre>
+</body>
+</html>
